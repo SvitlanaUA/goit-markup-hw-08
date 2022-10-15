@@ -1094,10 +1094,6 @@ line-height: 1.71;
           justify-content: center;
 }
 
-.footer-link {
-  outline: 1px solid white;
-}
-
 .footer-list {
   margin-top: 20px;
 }
@@ -1131,7 +1127,6 @@ line-height: 1.71;
 }
 
 .footer-social {
-  outline: 1px solid white;
   display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1201,7 +1196,6 @@ line-height: 1.71;
 }
 
 .form-footer {
-  outline: 1px solid white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
