@@ -18,7 +18,7 @@
 .team-item {
     margin-top: 30px;
     background-color: var(--primary-bg-color);
-    width: 270px;
+    width: 450px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -81,6 +81,8 @@
     background-color: var(--active-bg-color);
     fill: var(--primary-bg-color)
 }
+
+
 /*
 .team {
     background-color: var(--second-bg-color);
