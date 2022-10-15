@@ -18,26 +18,24 @@
        <nav class="header-nav">
         <a  href="/index.html" lang="en" class="logo"><span class="logo-web">Web</span>Studio
         </a> 
-        <!-- 
-        <button type="button" 
-          class="menu-button is-open"
+            <button type="button" 
+            class="menu-button is-open" 
+            aria-expanded="false"
+            aria-controls="menu-container"
+           
+            data-menu-button>
+             <svg width="40" height="40"
+                aria-label="переключення модального вікна">
+                  <use class="icons-menu" href="./images/sprite.svg#icon-menu"> </use>
+                  <use class="icons-croc" href="./images/sprite.svg#icon-croc"> </use>
+              </svg> 
+                 
+            </button>
+              <div class="menu-container" 
+              id="menu-container" data-menu>
+                Меню 
+              </div>
 
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button=>
-           <svg>
-            width="40"
-            height="40"
-            aria-label="переключення модального вікна"
-           </svg> 
-           <use class="icons-croc" href="./images/sprite.svg#icon-croc"> </use>
-           <use class="icons-menu" href="./images/sprite.svg#icon-menu"> </use>
-          </button>
-          <div class="menu-container" id="menu-container" data-menu>
-            Конент меню
-          </div>
-        -->
-          
         <ul class="header-list">
            <li class="item"><a href="index.html" class="link current">Студія</a></li>
            <li class="item"><a href="portfolio.html" class="link">Портфоліо</a></li>
@@ -60,6 +58,7 @@
        </li>
       </ul>
       </div>
+      
     </header>
     <main>
       <section class="main section">
@@ -464,8 +463,7 @@
     </div>
   </div>    
    <script src="./js/modal.js"></script>
-   <script src=".js/mobile-menu.js"></script>
- 
+   <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
 
