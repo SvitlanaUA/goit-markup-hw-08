@@ -1,21 +1,21 @@
 
 .footer {
     outline: 2px solid green;
-    
+    text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--accent-bg-color);
 }
 
 .footer-position {
-    outline: 3px solid yellow;
+    
     display: block;
     flex-direction: row;
     justify-content:center;
 }
 
 .footer-link {
-    margin-right: 70px;
+    outline: 1px solid white;  
 }
 
 .footer-list {
@@ -24,7 +24,7 @@
 
 .footer-list,
 .link-adress {
-    outline: 1px solid white;
+    
     font-style: normal;
     color: var(--buttoms-text-color--);
     line-height: 1.18;
@@ -52,7 +52,15 @@
     color: var(--accent-text-color);
 }
 
+.footer-social{
+ outline: 1px solid white;
+display: block;
+justify-content: center;
+ margin-top: 60px;
+}
+
 .title-footer {
+
     justify-content: center;
     align-items: center;
     font-weight: 700;
@@ -64,6 +72,7 @@
 
 .footer-icons-list {
     display: flex;
+    justify-content: center;
 }
 
 .footer-icons-item {
@@ -96,14 +105,17 @@
 }
 
 .form-footer {
-    
-    align-items: baseline;
-    margin-left: auto;
+    outline: 1px solid white;
+   display: flex; 
+   justify-content: center;
+   margin-top: 60px;
+  
 }
 
 .title-form-footer {
+    align-items: center;
     text-transform: uppercase;
-    width: 207px;
+    
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.14;
@@ -121,19 +133,17 @@
     display: block;
     box-sizing: border-box;
     padding: 15px 16px;
-    width: 358px;
+    width: 450px;
     height: 50px;
     outline: none;
     background-color: #2F303A;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-
-    margin-right: 12px;
     color: #ffffff;
 }
 
 .button-footer {
-
+     margin-top: 20px;
     align-items: center;
     text-align: center;
     text-align: left;
