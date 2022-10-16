@@ -1,8 +1,139 @@
 
 
-.header-list , 
+
+
+.header-nav {
+    position: relative;
+}
+
+.menu-button {
+    align-items: baseline;
+    display: inline-flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    margin-left: 276px;
+}
+
+.menu-button .icons-cross {
+    display: none;
+}
+
+.menu-button.is-open .icons-cross {
+    display: block;
+}
+
+.menu-button.is-open .icons-menu {
+    display: none;
+}
+.menu-container {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    width: 480px;
+    height: 796px;
+    background-color: #fff;
+    
+}
+.menu-container.is-open{
+    display: block;
+}
+
+.mob-menu-nav{
+    display: flex;
+    margin-left: 40px;
+    align-items: flex-start;
+    
+}
+
+.header-list,
 .header-contact{
+   display: none;
+}
+
+.mob-menu-list{
+  margin-bottom: 306px;
+ 
+}
+
+.mob-menu-item {
+    margin-bottom: 32px;
+}
+
+.mob-menu-item:last-child {
+    margin-bottom: 0;
+}
+
+.mob-menu-link{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #212121;    
+}
+
+.mob-menu-list{
+    margin-top: 48px;
+}
+
+.mob-menu-list,
+.mob-menu-link.current {
+    color: var(--accent-text-color);
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function--);
+}
+.contact-item{
+    margin-top: 32px;
+}
+.mob-header-link{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
    
+   
+}
+
+.mob-header-link:hover{
+color: var(--accent-text-color);
+}
+
+.header-social{
+display: flex;
+margin-top: 62px;
+margin-left: 40px;
+}
+
+
+.header-social
+.link{
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 1.22;
+color: var(--accent-text-color);
+}
+
+ .link{
+    margin-right: 20px;
+}
+
+
+/*
+.menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+    padding: 20px;
 }
 
 /*
@@ -148,6 +279,7 @@
     border-radius: 2px;
 
 }
+
 .menu-container {
     position: absolute;
     top: 100%;

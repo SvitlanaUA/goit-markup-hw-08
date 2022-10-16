@@ -13,12 +13,66 @@
   </head>
 
   <body>
+
     <header class="header">
-     <div class="container main-nav">
-       <div class="mob-menu is-hidden">
+      <div class="container main-nav">
+       <nav class="header-nav">
+         <a  href="/index.html" lang="en" class="logo"><span class="logo-web">Web</span>Studio
+         </a> 
+         <button type="button" 
+            class="menu-button" 
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button>
+             <svg width="24" height="16"
+              aria-label="переключення модального вікна">
+                  <use class="icons-menu" href="./images/sprite.svg#icon-menu"> </use>
+                  <use class="icons-cross" href="./images/sprite.svg#icon-croc"> </use>
+              </svg> 
+            </butto>
+            <div class="menu-container" id="menu-container" data-menu>
+              <nav class="mob-menu-nav">
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-item"><a href="index.html" class="mob-menu-link current">Студія</a></li>
+                <li class="mob-menu-item"><a href="portfolio.html" class="mob-menu-link">Портфоліо</a></li>
+                <li class="mob-menu-item"><a href="" class="mob-menu-link">Контакти </a></li>
+              </ul>
+            </nav>  
+           <ul class="mob-menu-contact">
+            <li class="contact-item ">
+             <a href="mailto:info@devstudio.com" class="mob-header-link" >
+              info@devstudio.com </a>
+             </li>
+             <li class="contact-item "> 
+               <a href="tel:+380961111111" class="mob-header-link">
+                  +38 096 111 11 11 </a>
+             </li>
+            </ul>
+            <ul class="header-social">
+						<li class="header-social__item">
+							<a href="" class="header-social__link link">Instagram</a>
+						</li>
+						<li class="header-social__item">
+							<a href="" class="header-social__link link">Twitter</a>
+						</li>
+						<li class="header-social__item">
+							<a href="" class="header-social__link link">Facebook</a>
+						</li>
+						<li class="header-social__item">
+							<a href="" class="header-social__link link">LinkedIn</a>
+						</li>
+					</ul>
+            </div>
+        </nav>
+         
+
+      <!--
+    <header class="header">
+     <div class="container main-nav ">
+       <div class="mob-menu is-hidden js-menu-container ">
         <div class="container">
           <div class="mob-menu-top">
-              <button class="close-menu" type="button">
+              <button class="js-close-menu" type="button" >
                 закриття
                 <svg width="24" height="16"
                  aria-label="переключення модального вікна">
@@ -32,9 +86,9 @@
                 <li class="mob-menu-item"><a href="" class="mob-menu-link" >Контакти </a></li>
               </ul>
             </nav>
-          </div>
+           </div>
+         </div>
         </div>
-      </div>
 
        <nav class="header-nav">
         <a  href="/index.html" lang="en" class="logo"><span class="logo-web">Web</span>Studio
@@ -59,8 +113,8 @@
              </use>
            </svg> +38 096 111 11 11 </a>
        </li>
-      </ul>
-       <button type="button" class="open-menu">
+       </ul>
+       <button type="button" class="js-open-menu">
         кнопка
          <svg width="24" height="16"
            aria-label="переключення модального вікна">
@@ -71,7 +125,7 @@
     </heade>
 
 
-
+-->
  <!--  
     <header class="header">
       <div class="container main-nav">
@@ -170,7 +224,7 @@
          </ul>
         </div>
       </section>
-      <section class="work section">
+      <section class="work section is-hidden">
         <div class="container">
            <h2 class="work-title"> Чим ми займаємося </h2>
           <ul class="work-list">
