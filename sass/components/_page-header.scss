@@ -66,7 +66,7 @@
 }
 
 .mob-menu-list,
-.mob-menu-link.current {
+.mob-menu-link.mob-current {
     color: var(--accent-text-color);
     transition-property: color, fill;
     transition-duration: 250ms;
@@ -114,16 +114,14 @@
 
 .link {
     margin-right: 20px;
-}
-
-
-
-
+    @media screen and (min-width: 768px) {
+        margin-right: 0px;}
+    }
 /* Стилі для таблета та декстопа*/
 
 .header {
     display: none;
-    
+
     @media screen and (min-width: 768px) {
     display: block;
     border-bottom: 1px solid rgba(236, 236, 236, 1);
@@ -131,51 +129,56 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    
+    &-block {
+        display: flex;
+        align-items: center;
     }
-}
-.main-nav,
-.header-nav {
-    display: flex;
-    align-items: center;
+
+    &-list {
+        margin-left: 87px;
+    }
+
+    &-list,
+    .link.current {
+        display: flex;
+        color: var(--accent-text-color);
+        transition-property: color, fill;
+        transition-duration: 250ms;
+        transition-timing-function: var(--timing-function--);
+    }
+
+    &-svg {
+        align-items: center;
+        fill: currentColor;
+        justify-content: center;
+        margin-right: 10px;
+
+    }
+
+    &-link {
+        font-size: 12px;
+        line-height: 1.16;
+        color: var(--second-text-color);
+      
+    }
+
+    &-contact {
+      display: block;
+      margin-left: 60px;
+      outline: 1px solid red;
+    }
+      
+    &__item-contact:last-child {
+    margin-top: 10px;
+    }
+    }
+
 }
 
-.main-nav {
-    position: relative;
-}
-
-.header-list {
-    margin-left: 93px;
-}
-
-.header-list,
-.link.current {
-    display: flex;
-    color: var(--accent-text-color);
-    transition-property: color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: var(--timing-function--);
-}
-
-.heder-icons {
-    margin-left: 30px;
-}
-
-.svg-header {
-    align-items: center;
-    fill: currentColor;
-    justify-content: center;
-    margin-right: 10px;
-}
 
 .header-list .header__item+.header__item {
     margin-left: 50px;
-}
-
-.header-link {
-    color: var(--second-text-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
-
 }
 
 .header-link:hover,
@@ -186,15 +189,6 @@
 .current:focus {
     color: var(--accent-text-color);
     fill: var(--accent-text-color)
-}
-
-.header-contact {
-    display: flex;
-    margin-left: auto;
-}
-
-.header-contact .header__item+.header__item {
-    margin-left: 50px;
 }
 
 .link,
@@ -222,6 +216,7 @@
     fill: currentColor;
     justify-content: center;
 }
+
 
 /*
 .header {
