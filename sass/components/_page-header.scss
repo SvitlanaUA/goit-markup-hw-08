@@ -6,17 +6,30 @@
 }
 
 .menu-button {  
-   
+    justify-content: flex-end;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
-    margin-left: 276px;
-    @media screen and (min-width: 768px){
+    
+    @media screen and (min-width: 767px){
         display: none;
     }
 }
 
+
+ .menu-button .icons-cross {
+     display: none;
+     position: absolute;
+ }
+
+ .menu-button.is-open .icons-cross {
+     display: block;
+ }
+
+ .menu-button.is-open .icons-menu {
+     display: none;
+ }
 .menu-button .icons-cross {
     display: none;
     position: absolute;
@@ -32,16 +45,16 @@
 
 .menu-container {
     background-color: #fff; 
-    padding-left: 40px;
-
-    @media screen and (max-width: 768px) {
-            position: absolute;
-             display: none;
-             top: 100%;
-            left: -15px;
-            width: 480px;
-        }
     
+    top: 100%;
+    left: -15px;
+    width: 480px;
+     position: absolute;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+        padding-left: 40px;
+        }
 }
 
 .menu-container.is-open{
@@ -114,21 +127,75 @@
 
 .link {
     margin-right: 20px;
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 767px) {
         margin-right: 0px;}
     }
+
+
 /* Стилі для таблета та декстопа*/
 
 .header {
     display: none;
 
-    @media screen and (min-width: 768px) {
-    display: block;
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+
+    &-block {
+        @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        } 
+    }
+
+     &-list {
+        margin-left: 87px;
+    }
+       &-list,
+    .link.current {
+        display: flex;
+        color: var(--accent-text-color);
+        transition-property: color, fill;
+        transition-duration: 250ms;
+        transition-timing-function: var(--timing-function--);
+    }
+
+    &-svg {
+        align-items: center;
+        fill: currentColor;
+        justify-content: center;
+        margin-right: 10px;
+
+    }
+
+    &-link {
+        font-size: 12px;
+        line-height: 1.16;
+        color: var(--second-text-color);
+      
+    }
+
+    &-contact {
+      display: block;
+      margin-left: 60px;
+      outline: 1px solid red;
+    }
+      
+    &__item-contact:last-child {
+    margin-top: 10px;
+    }
+}
+
+
+
+/*
+.header {
     border-bottom: 1px solid rgba(236, 236, 236, 1);
     color: var(--primary-text-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    }
     
     &-block {
         display: flex;
@@ -172,8 +239,6 @@
     &__item-contact:last-child {
     margin-top: 10px;
     }
-    }
-
 }
 
 

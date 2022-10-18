@@ -2,7 +2,10 @@
 .partners {
 
     &__title {
+        justify-content: center;
+        align-items: center;
         margin-bottom: 30px;
+        display: flex;
     }
 
     &__list {
@@ -13,12 +16,22 @@
     }
 
     &__item {
-        width: 210px;
-        height: 92px;
+        
         display: flex;
         flex-wrap: wrap;
+       
+
+       @media screen and (max-width: 767px) {
+        width: 210px;
+        height: 92px;
         margin-bottom: 30px;
-    }
+       }
+
+        @media screen and (min-width: 768px) {
+            width: 226px;
+            height: 92px;
+         }
+      }
 
     &__icon {
         justify-content: center;
@@ -32,12 +45,40 @@
         transition-property: border-color, fill;
         transition-duration: 250ms;
         transition-timing-function: var(--timing-function--);
-    }
+        }
 
-     &__list &__item:nth-child(2n + 1) {
-       margin-right: 30px;
-    }
+        @media screen and (max-width: 767px){
+            &__list &__item:nth-child(2n + 1) {
+           margin-right: 30px;
+          }
+        }
 
+        @media screen and (min-width: 768px) {
+           &__list &__item:nth-child(2) {
+              margin-right: 30px;
+              margin-left: 30px;
+             }
+       }
+
+        @media screen and (min-width: 768px) {
+           &__list &__item:nth-child(5) {
+            margin-right: 30px;
+            margin-left: 30px;
+            }
+       }
+       
+         @media screen and (min-width: 768px) {
+             &__list &__item:nth-child(-n+3) {
+            margin-bottom: 30px;
+             }
+            }
+/*
+    &__list &__item+&__item {
+        @media screen and (min-width: 1200px) {
+          margin-left: 30px;
+          }
+        }
+*/
     &__svg {
         width: 106px;
         height: 60px;
@@ -49,8 +90,8 @@
         fill: var(--active-bg-color);
     }
 
-  
 }
+
 /*
 .partners{
 

@@ -1,12 +1,20 @@
 
 
 .menu {
-    justify-content: flex-start;
+    
     display: flex;
     flex-wrap: wrap;
-    width: 326px;
-    height: 91px;
     
+    @media screen and (max-width: 767px) {
+        width: 326px;
+        height: 91px;
+        justify-content: flex-start;
+        }
+
+        @media screen and (min-width: 768px) {
+            justify-content: center;
+        }
+
 
     &__btn {
         display: inline-block;
@@ -56,13 +64,26 @@
     }
 
     &__item {
-        width: 450px;
-        
         transition-property: box-shadow transform;
         transition-duration: 250ms;
         transition-timing-function: var(--timing-function--);
+
+        @media screen and (max-width: 767px) {
+                width: 450px;
+            }
+        
+         @media screen and (min-width: 768px) {
+                width: 354px;
+                margin-bottom: 30px;
+            }
     }
 
+    &__item:nth-child(2n+1){
+        @media screen and (min-width: 768px) {
+                margin-right: 30px;
+            }
+    
+   }
 
     &__item:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
@@ -79,17 +100,17 @@
    
 
     &__img {
-        width: 418px;
-        height: 360px;
         overflow: hidden;
         transition-property: box-shadow;
         transition-duration: 250ms;
         transition-timing-function: var(--timing-function--);
     }
-      &__img img {
+
+      &__img  {
            display: block;
            width: 100%;
         }
+
     &__block {
         padding: 20px 24px;
         border-top: none;

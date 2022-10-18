@@ -6,14 +6,14 @@
     margin-right: auto;
 
     @media screen and (min-width: 480px) {
-            width: 480px;
+         width: 480px;
         }
 
-    @media screen and (min-width: 770px) {
-        width: 738px;
+    @media screen and (min-width: 768px) {
+        width: 768px;
     }
 
-     @media screen and (min-width: 1600px) {
+     @media screen and (min-width: 1200px) {
         width: 1200px;
        }
 }
@@ -24,10 +24,8 @@
     padding-bottom: 60px;
 
     @media screen and (min-width: 1200px) {
-            .section {
                 padding-top: 94px;
                 padding-bottom: 94px;
-            }
         }
 }
 
