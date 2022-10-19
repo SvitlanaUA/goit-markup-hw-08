@@ -57,10 +57,14 @@
 .portfolio {
 
     &__list {
-        margin-top: 40px;
-        justify-content: center;
+        margin-top: 14px;
         display: flex;
         flex-wrap: wrap;
+
+        @media screen and (min-width: 1199px) {
+                margin-top: 50px;
+                justify-content: center;
+            }
     }
 
     &__item {
@@ -70,10 +74,17 @@
 
         @media screen and (max-width: 767px) {
                 width: 450px;
+                justify-content: center;
             }
         
          @media screen and (min-width: 768px) {
                 width: 354px;
+                margin-bottom: 30px;
+            }
+
+              @media screen and (min-width: 1199px) {
+                width: 370px;
+                margin-right: 30px;
                 margin-bottom: 30px;
             }
     }
@@ -84,6 +95,13 @@
             }
     
    }
+
+   &__item:nth-child(3n) {
+        @media screen and (min-width: 1199px) {
+          margin-right: 0;
+        }  
+   }
+
 
     &__item:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
@@ -165,46 +183,6 @@
 
 
 /*
-.menu {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    
-    &__btn {
-        display: inline-block;
-        border-radius: 4px;
-        padding: 6px 22px 6px 22px;
-        cursor: pointer;
-        border: 1px solid #F5F4FA;
-    
-        background-color: var(--buttoms-bg-color--);
-        color: var(--primary-text-color);
-    
-        font-family: Roboto, sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.62;
-        text-align: center;
-    
-        transition-property: box-shadow, background-color, color;
-        transition-duration: 250ms;
-        transition-timing-function: var(--timing-function--);
-
-            &:hover,
-            &:focus {
-            background-color: var(--active-bg-color);
-            color: var(--buttoms-text-color--);
-            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
-            box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-            }
-        }
-
-}
-
-.menu .menu__filter + .menu__filter {
-    padding-left: 8px;
-}
 
 .portfolio {
     
@@ -223,6 +201,7 @@
         transition-duration: 250ms;
         transition-timing-function: var(--timing-function--);
         }
+
    &__item:nth-child(3n) {
         margin-right: 0;
         }

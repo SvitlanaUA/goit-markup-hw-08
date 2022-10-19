@@ -6,6 +6,7 @@
         display: flex;
         flex-wrap: wrap;
     }
+
 }
 
 .company-item {
@@ -15,8 +16,11 @@
 
      @media screen and (min-width: 768px) {
      width: 354px;
+       }
 
-    }
+     @media screen and (min-width: 1200px) {
+         width: 270px;
+      }
  
 }
 
@@ -52,8 +56,6 @@
   }
 }
 
-
-
 .svg-company {
     border-radius: 4px;
 }
@@ -78,6 +80,7 @@
  display: flex;
  flex-wrap: wrap;
 }
+
 .svg-company {
  border-radius: 4px;
 }
