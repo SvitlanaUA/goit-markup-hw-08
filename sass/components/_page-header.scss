@@ -174,7 +174,7 @@
         margin-right: 8px;
 
         @media screen and (min-width: 1200px) {
-                margin-right: 20px;
+                margin-right: 10px;
             }
         }
 
@@ -189,12 +189,13 @@
         color: var(--second-text-color);
 
         @media screen and (min-width: 1199px) {
-         margin-left: 30px;
+            
+         margin-right: 30px;
             }
     }
    
     &-contact {
-      outline: 1px solid red;
+      outline: 1px solid green;
 
     @media screen and (min-width: 768px) {
         display: block;
@@ -211,6 +212,7 @@
     &__item-contact:last-child {
         @media screen and (max-width: 1199px) {
         margin-top: 10px;
+
         }
     }
 }      
