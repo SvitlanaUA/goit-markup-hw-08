@@ -1,10 +1,13 @@
 
 .footer {
-    outline: 2px solid green;
-    text-align: center;
+    
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--accent-bg-color);
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+        }
 
    &-position {
             @media screen and (max-width: 767px) {
@@ -139,7 +142,7 @@
 
 
 .title-form-footer {
-    align-items: center;
+   
     text-transform: uppercase;
     
     margin-bottom: 20px;
@@ -147,7 +150,9 @@
     line-height: 1.14;
     font-weight: 700;
     letter-spacing: 0.03em;
-    color: var(--buttoms-text-color--)
+    color: var(--buttoms-text-color--);
+
+   
 }
 
 .footer-subscribe {

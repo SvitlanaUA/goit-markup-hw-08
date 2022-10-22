@@ -13,63 +13,29 @@
   </head>
 
   <body>
-    <heder>
+    <header>
       <div class="container header-block">
         <nav class="mob-header-nav">
           <a  href="/index.html" lang="en" class="logo"><span class="logo-web">Web</span>Studio
          </a> 
          <button type="button" 
-            class="menu-button" 
+            class="menu-button js-open-menu" 
             aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-button>
+            aria-controls="mobile-menu">
             <svg width="24" height="16"
             aria-label="переключення модального вікна">
                 <use class="icons-menu" href="./images/sprite.svg#icon-menu"> </use>
-                <use class="icons-cross" href="./images/sprite.svg#icon-croc"> </use>
               </svg> 
           </butto>
-          <div class="menu-container" id="menu-container" data-menu>
-              <ul class="mob-menu-list">
-                <li class="mob-menu-item"><a href="index.html" class="mob-menu-link mob-current">Студія</a></li>
-                <li class="mob-menu-item"><a href="portfolio.html" class="mob-menu-link">Портфоліо</a></li>
-                <li class="mob-menu-item"><a href="" class="mob-menu-link">Контакти </a></li>
-              </ul>
-             <ul class="mob-menu-contact">
-               <li class="contact-item ">
-                 <a href="mailto:info@devstudio.com" class="mob-header-link" >
-                info@devstudio.com </a>
-               </li>
-               <li class="contact-item "> 
-                 <a href="tel:+380961111111" class="mob-header-link">
-                 +38 096 111 11 11 </a>
-              </li>
-             </ul> 
-             <ul class="header-social">
-						    <li class="header-social__item">
-							    <a href="" class="header-social__link link">Instagram</a>
-						    </li>
-						    <li class="header-social__item">
-							    <a href="" class="header-social__link link">Twitter</a>
-						    </li>
-						    <li class="header-social__item">
-							    <a href="" class="header-social__link link">Facebook</a>
-						    </li>
-						    <li class="header-social__item">
-							   <a href="" class="header-social__link link">LinkedIn</a>
-						    </li>
-					    </ul>
-          </div>
         </nav>
-
-       <div class="header header-block">
+       <div class="header header-block ">
            <nav class="header-nav">
            <ul class="header-list">
-             <li class="header__item"><a href="index.html" class="link current">Студія</a></li>
+             <li class="header__item"><a href="index.html" class="link  current">Студія</a></li>
              <li class="header__item"><a href="portfolio.html" class="link ">Портфоліо</a></li>
              <li class="header__item"><a href="" class="link" >Контакти </a></li>
             </ul>
-       </nav>
+         </nav>
           <ul class="header-contact">
             <li class="header__item-contact">
              <a href="mailto:info@devstudio.com" class="header-link" >
@@ -85,10 +51,9 @@
                </svg> +38 096 111 11 11 </a>
            </li>
          </ul>
-       </div>
-     </div>
-    </heder>
-
+      </div>
+    </header>
+    
     <main>
       <section class="main section">
         <div class="container ">
@@ -166,11 +131,13 @@
        <h2 class="team-title">Наша команда </h2>
         <ul class="team-list"> 
           <li class="team-item">
-            <img 
-            srcset="./images/heroes.jpg 1x"
-            srcset="./images/heroes-2x.jpg 2x"
-            src="./images/heroes.jpg" 
-            alt="Product_Designer" >
+            <div class="team-img">
+              <img 
+               srcset="./images/heroes.jpg 1x"
+               srcset="./images/heroes-2x.jpg 2x"
+               src="./images/heroes.jpg" 
+               alt="Product_Designer" >
+            </div>
             <div class="team-block"> 
               <h3 class="team-heroes"> Ігор Дем'яненко </h3>
               <p class="team-description"> Product Designer </p>
@@ -206,7 +173,10 @@
               </ul>
             </div>
           <li class="team-item">
-            <img src="./images/img2.jpg" alt="Frontend_Developer" width="270">
+            <div class="team-img">
+              <img src="./images/img2.jpg" alt="Frontend_Developer" >
+            </div>
+            
             <div class="team-block">
               <h3 class="team-heroes"> Ольга Рєпіна </h3>
               <p class="team-description"> Frontend Developer </p>
@@ -242,7 +212,10 @@
               </ul>
             </div>
           <li class="team-item">
-            <img src="./images/img3.jpg" alt="Marketing" width="270">
+            <div class="team-img">
+               <img src="./images/img3.jpg" alt="Marketing" >
+            </div>
+           
             <div class="team-block">
               <h3 class="team-heroes">Микола Тарасов</h3>
               <p class="team-description"> Marketing </p>
@@ -278,7 +251,10 @@
               </ul>
             </div>
           <li class="team-item">
-            <img src="./images/img4.jpg" alt="UI Designer" width="270">
+             <div class="team-img">
+               <img src="./images/img4.jpg" alt="UI Designer" >
+             </div>
+            
             <div class="team-block">
               <h3 class="team-heroes"> Михайло Єрмаков </h3>
               <p class="team-description"> UI Designer </p>
@@ -496,8 +472,59 @@
          </div>
     </div>
   </div>    
+   
+          <div class="menu-container js-menu-container" 
+            id="mobile-menu">
+            <div >
+                 <button type="button" 
+                    class="button-close js-close-menu ">
+                    <svg width="24" height="16"
+                     aria-label="переключення модального вікна">
+                    <use class="icons-cross" href="./images/sprite.svg#icon-croc"> </use>
+                    </svg> 
+                 </butto>
+            </div>
+               
+              
+              <ul class="mob-menu-list">
+                <li class="mob-menu-item"><a href="index.html" class="mob-menu-link mob-current">Студія</a></li>
+                <li class="mob-menu-item"><a href="portfolio.html" class="mob-menu-link">Портфоліо</a></li>
+                <li class="mob-menu-item"><a href="" class="mob-menu-link">Контакти </a></li>
+              </ul>
+             <ul class="mob-menu-contact">
+               <li class="contact-item ">
+                 <a href="mailto:info@devstudio.com" class="mob-header-link" >
+                info@devstudio.com </a>
+               </li>
+               <li class="contact-item "> 
+                 <a href="tel:+380961111111" class="mob-header-link">
+                 +38 096 111 11 11 </a>
+              </li>
+             </ul> 
+             <ul class="header-social">
+						    <li class="header-social__item">
+							    <a href="" class="header-social__link link">Instagram</a>
+						    </li>
+						    <li class="header-social__item">
+							    <a href="" class="header-social__link link">Twitter</a>
+						    </li>
+						    <li class="header-social__item">
+							    <a href="" class="header-social__link link">Facebook</a>
+						    </li>
+						    <li class="header-social__item">
+							   <a href="" class="header-social__link link">LinkedIn</a>
+						    </li>
+					    </ul>
+           </div>
+
    <script src="./js/modal.js"></script>
-   <script src="./js/mobile-menu.js"></script>
+   <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
 

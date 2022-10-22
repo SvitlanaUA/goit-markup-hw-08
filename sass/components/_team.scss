@@ -2,10 +2,43 @@
 .team {
     background-color: var(--second-bg-color);
 
+    &-img{
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    }
+
+     &-img img{
+        max-width: 100%;
+        width: 354px;
+        height: 374px;
+
+        @media screen and (max-width: 767px) {
+        max-width: 100%;
+        width: 450px;
+        height: 460px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+        max-width: 100%;
+        width: 270px;
+        height: 260px;
+        }
+    }
+
+
    &-title {
         justify-content: center;
         align-items: center;
         margin-top: 60px;
+        margin-bottom: 30px;
+        font-size: 28px;
+        line-height: 1.18;
+        @media screen and (min-width: 1200px) {
+                font-size: 36px;
+                line-height: 1.19;
+            }
     }
 
     &-list {
@@ -18,7 +51,8 @@
         }
          @media screen and (min-width: 1200px) {
             margin-left: auto;
-            margin-top: 50px
+            margin-top: 50px;
+        
         }
        
     }
