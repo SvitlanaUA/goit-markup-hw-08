@@ -48,7 +48,7 @@
 
     &__title {
             color: var(--second-bg-color);
-            width: 360px;
+            
             margin-left: auto;
             margin-right: auto;
             front-weight: 900;
@@ -58,11 +58,13 @@
             @media screen and (max-width: 1199px){
             font-size: 26px;
              line-height: 1.61;
+            width: 360px;
             }
 
         @media screen and (min-width: 1200px) {
             font-size: 44px;
             line-height: 1.36;
+            width: 700px;
            }
         }
 
@@ -82,6 +84,7 @@
     line-height: 1.87;
     align-items: center;
     letter-spacing: 0.06em;
+
     @media screen and (min-width: 1200px) {
     min-width: 216px;
     }

@@ -85,7 +85,24 @@
                 <li class="portfolio__item">
                   <div class="projects" > 
                    <a href="" class="projects__img">
-                    <img src="./images_projects/img2.jpg" alt="Постер New Orlean vs Golden Star" >
+                            <picture>
+                               <source srcset="
+                              ./images/imgP_2_450_1x.jpg 1x, 
+                               ./images/imgP_2_450_2x.jpg 2x"
+                               media="(max-width: 767px)">
+                               <source srcset="
+                              ./images/imgP_2_650_1x.jpg 1x, 
+                               ./images/imgP_2_650_2x.jpg 2x"
+                               media="(min-width: 768px)">
+
+                                <source srcset="
+                              ./images/imgP_2_1200_1x.jpg 1x, 
+                               ./images/imgP_2_1200_2x.jpg 2x"
+                               media="(min-width: 1200px)">
+
+                              <img src="./images/imgP_2_450_1x.jpg" alt="Постер New Orlean vs Golden Star" >
+                            </picture>
+                    
                     <p class="projects__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                     </p>
@@ -113,6 +130,7 @@
                 <li class="portfolio__item">
                   <div class="projects" > 
                   <a href="" class="projects__img">
+                    
                     <img src="./images_projects/img4.jpg" alt="Проєкт Prime">
                     <p class="projects__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.

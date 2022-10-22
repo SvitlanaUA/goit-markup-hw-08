@@ -81,7 +81,6 @@ img {
 }
 
 .container {
-  outline: 1px solid red;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -336,9 +335,6 @@ img {
   .header-link {
     margin-right: 30px;
   }
-}
-.header-contact {
-  outline: 1px solid green;
 }
 @media screen and (min-width: 768px) {
   .header-contact {
@@ -638,7 +634,6 @@ img {
 }
 .main__title {
   color: var(--second-bg-color);
-  width: 360px;
   margin-left: auto;
   margin-right: auto;
   front-weight: 900;
@@ -649,12 +644,14 @@ img {
   .main__title {
     font-size: 26px;
     line-height: 1.61;
+    width: 360px;
   }
 }
 @media screen and (min-width: 1200px) {
   .main__title {
     font-size: 44px;
     line-height: 1.36;
+    width: 700px;
   }
 }
 .main__button {

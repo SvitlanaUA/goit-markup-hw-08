@@ -132,16 +132,21 @@
         <ul class="team-list"> 
           <li class="team-item">
             <picture>
-              <source srcset="
-              ./images/imgh_1_450_1x.jpg 1x, 
-              ./images/imgh_1_450_2x.jpg 2x"
-              media="(max-width: 767px)">
+               <source srcset="
+              ./images/imgh_1_1200_1x.jpg 1x, 
+              ./images/imgh_1_1200_2x.jpg 2x" 
+              media="(min-width: 1200px)"/>
 
               <source srcset="
               ./images/imgh_1_678_1x.jpg 1x, 
               ./images/imgh_1_678_2x.jpg 2x" 
               media="(min-width: 768px)"/>
-            
+ 
+              <source srcset="
+              ./images/imgh_1_450_1x.jpg 1x, 
+              ./images/imgh_1_450_2x.jpg 2x"
+              media="(max-width: 767px)">
+
             <img src="./images/heroes.jpg" alt="Marketing" >
             </picture>
             
