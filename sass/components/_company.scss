@@ -14,7 +14,7 @@
 }
 
 .company-item {
-    width: 354px;
+    
     margin: -15px;
     
     @media screen and (max-width: 767px) {
@@ -42,16 +42,16 @@
     border-radius: 4px;
    
     display: flex;
-    width: 354px;
+    max-width: 354px;
     height: 120px;
 
     @media screen and (max-width: 767px) {
-        width: 450px;
+        max-width: 450px;
         margin-bottom: 30px;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 270px;
+        max-width: 270px;
         margin-bottom: 30px;
         }
 }

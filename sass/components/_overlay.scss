@@ -59,7 +59,7 @@
             @media screen and (max-width: 1199px){
             font-size: 26px;
              line-height: 1.61;
-            width: 360px;
+            max-width: 360px;
             }
 
         @media screen and (min-width: 1200px) {
@@ -71,23 +71,29 @@
 
     &__button {
     margin-top: 30px;
-    min-width: 200px;
+    
     border: none;
     border-radius: 4px;
-    padding: 10px 32px 10px 32px;
+    
 
     background-color: var(--active-bg-color);
     color: var(--second-bg-color);
-    padding: 10px 0px 10px 0px;
+    
     font-family: Roboto, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     align-items: center;
     letter-spacing: 0.06em;
+    @media screen and (max-width: 1199px) {
+            max-width: 200px;
+            padding: 10px 22px 10px 22px;
+           
+        }
 
     @media screen and (min-width: 1200px) {
     min-width: 216px;
+    padding: 10px 0px 10px 0px;
     }
     
    }
