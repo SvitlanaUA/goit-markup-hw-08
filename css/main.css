@@ -258,7 +258,6 @@ img {
 /* Стилі для таблета та декстопа*/
 .header {
   display: none;
-  border-bottom: 1px solid rgb(236, 236, 236);
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -270,6 +269,7 @@ img {
   }
 }
 .header-block {
+  border-bottom: 1px solid rgb(236, 236, 236);
   position: relative;
 }
 @media screen and (min-width: 768px) {

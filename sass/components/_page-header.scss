@@ -2,6 +2,7 @@
 
 
 .menu-container{
+    
     display: none;
     background-color:#fff;
     top: 0;
@@ -117,7 +118,7 @@ display: block;
 
 .header {
     display: none;
-    border-bottom: 1px solid rgba(236, 236, 236, 1);   
+    
     color: var(--primary-text-color);
     font-weight: 500;
     line-height: 1.14;
@@ -128,6 +129,8 @@ display: block;
       }
 
     &-block {
+        border-bottom: 1px solid rgba(236, 236, 236, 1);
+        
         position: relative;
         @media screen and (min-width: 768px) {
         display: flex;
