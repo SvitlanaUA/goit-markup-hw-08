@@ -4,10 +4,10 @@
     
     display: flex;
     flex-wrap: wrap;
-
+    
 
      @media screen and (max-width: 767px) {
-        width: 326px;
+        max-width: 326px;
         margin-bottom: 40px;
     }
 
@@ -39,7 +39,10 @@
         transition-property: box-shadow, background-color, color;
         transition-duration: 250ms;
         transition-timing-function: var(--timing-function--);
-        
+
+        @media screen and (max-width: 450px) {
+                margin-bottom: 10px;
+            }
     
         &:hover,
         &:focus {
@@ -68,6 +71,8 @@
 }
 
 .menu__filter{
+
+   
     @media screen and (max-width: 767px) {
     margin-right: 8px;
     }
@@ -93,7 +98,7 @@
         transition-property: box-shadow transform;
         transition-duration: 250ms;
         transition-timing-function: var(--timing-function--);
-        width: 354px;
+        max-width: 354px;
         margin: -15px;
         
 
@@ -135,7 +140,7 @@
 
       &__img  {
            display: block;
-           width: 100%;
+           max-width: 100%;
         }
 
     &__block {
@@ -186,8 +191,6 @@
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio .portfolio__item:not(:last-child) {
-   
-}
+
 
 
