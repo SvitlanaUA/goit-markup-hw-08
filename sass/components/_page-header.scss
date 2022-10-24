@@ -1,71 +1,65 @@
+
 .main_header {
     border-bottom: 1px solid rgba(236, 236, 236, 1);
- 
-}
-.mob-header-nav{
-    
-}
-.menu-container{
-    display: none;
-    background-color:#fff;
-
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    
-    transition-timing-function: var(--timing-function--);
-    padding-left: 40px;
+   
 }
 
-.menu-container.is-open{
-
-display: block;
+.mob_position{
+    display: flex;
+    justify-content: space-between;
+   
 }
-
 
 .menu-button {
     padding: 0;
     border: none;
     background-color: transparent;
-    
-    @media screen and (min-width: 450px) {
-        margin-left: 250px;
-    }
+   
+
     @media screen and (min-width: 767px) {
         display: none;
     }
 }
 
+/*мобільне меню*/
 
+.menu-container {
+    display: none;
+    outline: 1px solid red;
+    background-color: #fff;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition-timing-function: var(--timing-function--);
+    padding-left: 40px;
+}
+
+.mob_close{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+}
 
 .button-close {
-    justify-content: flex-start;
-    padding-top: 10px;
-    
+    margin-left: 0%;
+    padding: 11px;
+    margin-top: 10px;
     border: none;
     background-color: transparent;
-    @media screen and (min-width: 450px) {
-        margin-left: 276px;
-        } 
 }
+
+.menu-container.is-open {
+    display: block;
+    }
 
 .mob-menu{
-    height: 100%;
- 
+   margin-bottom: 32px;
+   width: 100vw;
 }
 
-.mob-menu-item {
-    display: flex;
-    margin-bottom: 32px;
-    width: 100vw;
-    background-color: #fff;
-}
-
-.mob-menu-list {
-    margin-top: 48px;
-   
+.mob-menu_contacts{
+    margin-top: 274px;
 }
 
 .mob-menu-link {
@@ -74,7 +68,9 @@ display: block;
     font-weight: 500;
     letter-spacing: 0.02em;
     color: #212121;
-   
+}
+.mob-menu-item {
+    margin-bottom: 32px;
 }
 
 .mob-menu-list,
@@ -85,45 +81,39 @@ display: block;
     transition-timing-function: var(--timing-function--);
 }
 
-.mob-menu-contact {
-    @media screen and (min-width: 480px) {
-    margin-top: 274px;
-    }
-    
-}
-
 .contact-item {
     margin-bottom: 32px;
 }
 
 .mob-header-link {
-    
     font-weight: 500;
     font-size: 24px;
     line-height: 1.16;
     letter-spacing: 0.02em;
     color: var(--second-text-color);
 }
-
 .mob-header-link:hover,
 .mob-header-link:focus {
     color: var(--accent-text-color);
 
 }
 
-.header-social {
-    margin-bottom: 48px;
-    display: flex; 
+.mob-menu_social {
+    max-width: 800px;
+    outline: 1px solid green;
 
+    @media screen and (max-width: 450px) {
+        display: flex;
+         flex-wrap: wrap;
+        }
 }
 
 .header-social__item {
     margin-top: 32px;
-
 }
 
 .header-social__link {
-    
+
     border-right: 1px solid rgba(33, 33, 33, 0.2);
     font-style: normal;
     font-weight: 500;
@@ -134,16 +124,12 @@ display: block;
     padding-right: 10px;
     height: 22px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
-   
 }
 
 
 /* Стилі для таблета та декстопа*/
 
-
-
 .header{
-
     display: none;
     color: var(--primary-text-color);
     font-weight: 500;
@@ -156,13 +142,13 @@ display: block;
       }
 
     &-block {
-     
+        justify-content: space-between;
         position: relative;
 
         @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+       
         } 
 
         @media screen and (min-width: 1200px) {

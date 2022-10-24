@@ -66,13 +66,13 @@
 
         @media screen and (max-width: 767px) {
             width: calc((100% - 2 * 15px) / 1);
-            margin: 15px;
+            margin: 30px;
         }
 
          @media screen and (min-width: 768px) {
             width: calc((100% - 4 * 15px) / 2);
             margin: 15px;
-            margin-bottom: 0px;
+
           }
 
            @media screen and (min-width: 1200px) {

@@ -21,6 +21,8 @@
 
 
     &__btn {
+        
+        margin-left: auto;
         display: inline-block;
         border-radius: 4px;
         padding: 6px 22px 6px 22px;
@@ -42,6 +44,7 @@
 
         @media screen and (max-width: 450px) {
                 margin-bottom: 10px;
+               
             }
     
         &:hover,
@@ -71,16 +74,14 @@
 }
 
 .menu__filter{
-
-   
     @media screen and (max-width: 767px) {
     margin-right: 8px;
     }
 }
 
+
 .portfolio {
     
-
     &__list {
         margin-top: 14px;
         display: flex;
