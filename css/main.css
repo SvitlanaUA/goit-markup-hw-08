@@ -168,7 +168,6 @@ img {
 /*мобільне меню*/
 .menu-container {
   display: none;
-  outline: 1px solid red;
   background-color: #fff;
   width: 100vw;
   position: fixed;
@@ -180,7 +179,6 @@ img {
 }
 
 .mob_close {
-  background-color: aqua;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,7 +187,7 @@ img {
 }
 
 .button-close {
-  margin-left: 0%;
+  margin-left: 150px;
   padding: 11px;
   margin-top: 10px;
   border: none;
@@ -249,11 +247,14 @@ img {
   color: var(--accent-text-color);
 }
 
-.mob-menu_social {
-  max-width: 800px;
-  outline: 1px solid green;
+.header-social {
+  display: block;
 }
-@media screen and (max-width: 450px) {
+
+.mob-menu_social {
+  display: block;
+}
+@media screen and (max-width: 468px) {
   .mob-menu_social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -756,7 +757,7 @@ img {
   }
 }
 .team-item {
-  max-width: 354px;
+  width: 354px;
   margin: -15px;
   background-color: var(--primary-bg-color);
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -808,6 +809,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

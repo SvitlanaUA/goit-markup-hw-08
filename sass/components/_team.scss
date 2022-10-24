@@ -57,7 +57,7 @@
     }
 
     &-item {
-       max-width: 354px;
+        width: 354px;
         margin: -15px;
         background-color: var(--primary-bg-color);
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -74,7 +74,6 @@
             margin: 15px;
 
           }
-
            @media screen and (min-width: 1200px) {
              width: calc((100% - 8 * 15px) / 4);
              margin: 15px;
@@ -112,6 +111,7 @@
 
 .icons-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
