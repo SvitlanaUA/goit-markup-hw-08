@@ -187,7 +187,7 @@ img {
 }
 
 .button-close {
-  margin-left: 150px;
+  margin-left: 200px;
   padding: 11px;
   margin-top: 10px;
   border: none;
@@ -247,15 +247,17 @@ img {
   color: var(--accent-text-color);
 }
 
-.header-social {
-  display: block;
+.mob-menu_social {
+  margin-bottom: 48px;
 }
 
-.mob-menu_social {
-  display: block;
+.header-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media screen and (max-width: 468px) {
-  .mob-menu_social {
+  .header-social {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

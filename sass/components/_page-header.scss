@@ -41,7 +41,7 @@
 }
 
 .button-close {
-    margin-left: 150px;
+    margin-left: 200px;
     padding: 11px;
     margin-top: 10px;
     border: none;
@@ -97,16 +97,17 @@
 
 }
 
-.header-social{
-    display: block;
-}
+
 
 .mob-menu_social {
-    display: block;
+margin-bottom: 48px;
+}
 
+.header-social {
+display: flex;
     @media screen and (max-width: 468px) {
-        display: flex;
-        flex-wrap: wrap;
+            display: flex;
+            flex-wrap: wrap;
         }
 }
 
